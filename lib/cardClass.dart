@@ -13,7 +13,7 @@ class _MyCardState extends State<MyCard> {
     return Card(
       shadowColor: Colors.white,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(25),
+        borderRadius: BorderRadius.circular(15),
         side: BorderSide(
           color: Colors.black,
           width: 2.0
@@ -24,7 +24,12 @@ class _MyCardState extends State<MyCard> {
         color: Colors.white,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Center(child: Text(widget.content)),
+          child: Center(child: Text(widget.content,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.w500,
+            fontSize: 16,
+          ),)),
         ),
       ),
     );
